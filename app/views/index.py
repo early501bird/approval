@@ -1,11 +1,12 @@
 # !/home/lee/anaconda3/bin/python3.6
 # -*- coding:utf-8 -*-
 
-from tornado.web import RequestHandler
 import os
+import tornado.web
+from tornado.web import RequestHandler
+from .baseHandler import AuthBaseHandler
 
-
-class HomeHandler(RequestHandler):
+class IndexHandler(AuthBaseHandler):
+    @tornado.web.authenticated
     def get(self, *args, **kwargs):
-        self.write('this is home test')
-        # self.render("static_url")
+        self.render("index.html")
