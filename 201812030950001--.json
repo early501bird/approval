@@ -1,0 +1,27 @@
+{
+"status":0
+"passed":[]
+"next":"Manager1" 
+"attach":["img1"] 
+"info":{
+	"create": "aaa"
+	"time":"yyyy-mm-dd HH:mm:ss"
+	"title":"title1"
+	"desc":"because of some thing ,need to be approval"
+	}
+}
+
+
+
+{
+"status":0
+"passed":[Manager1]
+"next":"Manager2" 
+"attach":["img1"] 
+"info":{
+	"create": "aaa"
+	"time":"yyyy-mm-dd HH:mm:ss"
+	"title":"title1"
+	"desc":"because of some thing ,need to be approval"
+	}
+}
