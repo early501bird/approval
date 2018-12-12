@@ -7,6 +7,7 @@ from utils.account import authenticate
 
 class LoginHandler(AuthBaseHandler):
 
+
     @tornado.web.authenticated
     def get(self, *args, **kwargs):
         self.render("login.html")
