@@ -5,6 +5,12 @@
     <title>欢迎页</title>
 </head>
 <body>
-<h1>welcome!!!</h1>
+<h1>welcome!!!{{username}}</h1><br>
+<form action="/logout" method="post">
+    <input type="submit" value="logout">
+</form>
+<form action="/regist" method="get">
+    <input type="submit" value="regist user">
+</form>
 </body>
 </html>

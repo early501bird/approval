@@ -9,4 +9,4 @@ from .baseHandler import AuthBaseHandler
 class IndexHandler(AuthBaseHandler):
     @tornado.web.authenticated
     def get(self, *args, **kwargs):
-        self.render("index.html")
+        self.render("index.html",username=self.current_user)

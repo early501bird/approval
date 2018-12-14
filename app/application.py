@@ -10,10 +10,9 @@ class Application(Application):
     def __init__(self):
         handlers=(
             (r'/',IndexHandler),
-            (r'/userlogin', LoginHandler),
-
-
-            # (r'/(.*)$', StaticFileHandler,{"path": os.path.join(BASE_DIR, "static/html"), "default_filename": "index.html"}),
+            (r'/login', LoginHandler),
+            (r'/logout', LogoutHandler),
+            (r'/regist', RegistHandler),
 
         )
         super(Application,self).__init__(handlers,**settings)
